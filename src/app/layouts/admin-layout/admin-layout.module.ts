@@ -29,7 +29,7 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
   declarations: [
     HomeComponent,
     UserComponent,
-    TablesComponent,
+    // TablesComponent,
     TypographyComponent,
     IconsComponent,
     MapsComponent,

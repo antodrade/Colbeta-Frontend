@@ -4,26 +4,53 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Striped Table with Hover</h4>
-                        <p class="category">Here is a subtitle for this table</p>
-                    </div>
-                    <div class="content table-responsive table-full-width">
+                        <h4 class="title">Tabla de Usuarios registrados</h4>
+                        <p class="category">Compromiso y cumplimiento</p>
+                </div><div class="content table-responsive table-full-width">
                           <table class="table table-hover table-striped">
                                 <thead>
                                     <tr>
                                         <th *ngFor="let cell of tableData1.headerRow">{{ cell }}</th>
-                                    </tr>
-                                </thead>
+                               </tr></thead>
                                 <tbody>
+                                    <!-- <td> {{usuarios[1].eps}} </td>
+                                    <td> {{"hola1"}} </td>
+                                    <td> {{"hola2"}} </td>
+                                    <td> {{"hola3"}} </td>
+                                    <td> {{"hola4"}} </td>
+                                    <td> {{"hola5"}} </td>
+                                    <td> {{"hola6"}} </td>
                                     <tr *ngFor="let row of tableData1.dataRows">
                                         <td *ngFor="let cell of row">{{cell}}</td>
-                                    </tr>
+                                    </tr> -->
+
+                                    <!-- <tr *ngFor="let row of this.tableData1.dataRows">
+                                        <td *ngFor="let cell of row">{{cell}}</td>
+                                    </tr> -->
+
+                                    <tr *ngFor="let usuario of this.usuarios">
+                                       
+                                          <td>{{usuario.idUser}}</td>
+                                          <td>{{usuario.name1}}</td>
+                                          <td>{{usuario.lastname1}}</td>
+                                          <td>{{usuario.lastname2}}</td>
+                                          <td>{{usuario.eps}}</td>
+                                        </tr>
+                                  
+                                    <!-- @for (usuario of this.usuarios; track usuario.idUser) {
+                                         <td>{{usuario.idUser}}</td>
+                                          <td>{{usuario.name1}}</td>
+                                          <td>{{usuario.lastname1}}</td>
+                                          <td>{{usuario.lastname2}}</td>
+                                          <td>{{usuario.eps}}</td>
+                                        } -->
+                                     
                                 </tbody>
                           </table>
 
                     </div>
                 </div>
-            </div>
+            <!-- </div>
             <div class="col-md-12">
                 <div class="card card-plain">
                     <div class="header">
@@ -45,7 +72,9 @@
                         </table>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <!-- <prueba></prueba> -->
+        <pdf></pdf>
         </div>
     </div>
 </div>
